@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.0)
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - Then (2.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - RxAlamofire
+  - RxCocoa
+  - RxSwift
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+
+PODFILE CHECKSUM: 6bdf4d9bfbd2796c3bd1ccdd7d6e727290c0e541
+
+COCOAPODS: 1.10.0
