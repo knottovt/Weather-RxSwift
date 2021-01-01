@@ -17,27 +17,7 @@ class APIResponseMiddleware {
     
     static let shared = APIResponseMiddleware()
     
-    func inject(response:HTTPURLResponse, data:Data) {
-        Logger.response.log("Status Code: \(response.statusCode)")
-        Logger.response.log(data.asString())
-        if let headers = response.allHeaderFields as? [String: Any] {
-            Logger.response.log((try? headers.data().asString()) ?? "")
-        }
-    }
-    
     func inject(data: DataResponse<Any, AFError>) {
-        if let statusCode = data.response?.statusCode {
-            Logger.response.log("Status Code: \(statusCode)")
-        }
-        if let response = data.data?.asString() {
-            Logger.response.log(response)
-        }
-        if let headers = data.response?.allHeaderFields as? [String: Any] {
-            Logger.response.log((try? headers.data().asString()) ?? "")
-        }
-    }
-    
-    func inject(data: AFDataResponse<Data>) {
         if let statusCode = data.response?.statusCode {
             Logger.response.log("Status Code: \(statusCode)")
         }
