@@ -37,6 +37,7 @@ class APIRequestInterceptor: RequestInterceptor {
     static let shared = APIRequestInterceptor()
     
     func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (Result<URLRequest, Error>) -> Void) {
+        Logger.request.log(urlRequest.cURL)
         return completion(.success(urlRequest))
     }
     
